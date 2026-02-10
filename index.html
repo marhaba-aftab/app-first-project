@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment05</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        label{
+            display: block;
+        }
+        
+        
+        .a{
+            display: inline;
+        }
+        
+        textarea{
+            width: 599px;
+            height: 50px;
+        }
+        .name{
+            width: 599px;
+            height: 20px;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>user satisfaction survey form</h1>  
+            <p>By filling out this form, you help us provide a better experience for you</p>
+        </header>
+        <main>
+            <form action="confirmation.html" method="get">
+                <label  for="name">Name:</label>
+                <input class="name" type="text" placeholder="Marhaba" name="name" id="name" required minlength="2"/>
+
+                <label  for="email">Email:</label>
+                <input class="name" type="email"  placeholder="marhabaayuby7@gmail.com" name="email" id="email" required minlength="2"/>
+
+                <label  for="number">Age:</label>
+                <input type="number" name="number" id="number" min="1" max="100"/>
+
+
+
+                <label>How satisfied are you with our service?</label>
+                <input type="radio" name="aftab" id="very satisfied" value="very satisfied"/>
+                <label class="a"  for="very satisfied">Very satisfied</label>
+
+                <input type="radio" name="aftab" id="satisfied" value="satisfied"/>
+                <label class="a" for="satisfied">Satisfied</label>
+
+                <input type="radio" name="aftab" id="neutral" value="neutral"/>
+                <label class="a" for="neutral">Neutral:</label>
+                
+                <input type="radio" name="aftab" id="dissatisfide" value="dissatisfide"/>
+                <label class="a" for="dissatisfide">Dissatisfide</label>
+
+
+
+                <label>how did you hear about us?</label>
+                <select  name="hear" id="hear">
+                <option value="friend">friend</option>
+                <option value="family">family</option>
+                <option value="social media">social media</option>
+                <option value="google">google</option>
+                <option value="other">other</option>
+                </select>
+
+
+
+                <label>What features did you find useful?</label>
+                <input type="checkbox"  name="free resources" id="free resources" value="free resources"/>
+                <label class="a" for="free resources">Free resources</label>
+
+                <input type="checkbox"  name="helpfull support" id="helpfull support" value="helpfull support"/>
+                <label class="a" for="helpfull support">Helpfull support</label>
+
+                <input type="checkbox"  name="fast response time" id="fast response time" value="fast response time"/>
+                <label class="a" for="fast response time">Fast response time</label>
+
+
+               <label for="comments">Comments:</label>
+               <textarea id="comments"></textarea>
+                
+
+               <button type="submit">Submit</button>
+               <button type="reset">reset</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
